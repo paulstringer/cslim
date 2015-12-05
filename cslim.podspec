@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.ios.exclude_files= 'src/ExecutorObjectiveC/main.m'
   s.osx.exclude_files = 'fixtures/Main.c'
   s.private_header_files = "**/*.h"
+  s.preserve_path = 'bin/*'
 end
