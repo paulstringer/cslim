@@ -2,7 +2,8 @@
 
 @interface ValidInputTypes : NSObject
 
-@property (nonatomic, strong) NSString* calledWith;
+@property (nonatomic, strong) NSString* calledWithString;
+@property (readwrite, assign) NSInteger calledWithNSNumber;
 @property (readwrite, assign) BOOL callWithZeroArgsCalled;
 @property (nonatomic, strong) NSString* firstArg;
 @property (nonatomic, strong) NSString* secondArg;

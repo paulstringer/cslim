@@ -10,7 +10,11 @@
 }
 
 -(void) callWithNSString: (NSString*) string {
-    self.calledWith = string;
+    self.calledWithString = string;
+}
+
+-(void) callWithNSNumber: (NSNumber*) number {
+    self.calledWithNSNumber = [number integerValue];
 }
 
 -(void) callWithZeroArgs {
